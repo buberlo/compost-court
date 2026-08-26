@@ -1,0 +1,33 @@
+{
+  "name": "rot-parliament",
+  "version": "0.1.0",
+  "description": "A turn-based strategy game about governing a parliament of rotting fruit scraps.",
+  "type": "module",
+  "main": "dist/main.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "tsx src/main.ts",
+    "build": "tsc -p tsconfig.json",
+    "test": "tsx --test src/game.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "game",
+    "strategy",
+    "turn-based",
+    "typescript",
+    "cli"
+  ],
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.3"
+  }
+}
